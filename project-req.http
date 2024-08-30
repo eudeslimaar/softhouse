@@ -1,0 +1,44 @@
+### Get All Projects
+GET http://localhost:8080/api/projects
+Accept: application/json
+
+###
+
+### Get Project by ID
+GET http://localhost:8080/api/projects/1
+Accept: application/json
+
+###
+
+### Create a New Project
+POST http://localhost:8080/api/projects
+Content-Type: application/json
+
+{
+  "name": "New Project",
+  "description": "Description of the new project",
+  "client": "Client Name",
+  "startDate": "2024-09-01",
+  "endDate": "2024-12-01",
+  "status": "In Progress"
+}
+
+###
+
+### Update an Existing Project
+PUT http://localhost:8080/api/projects/1
+Content-Type: application/json
+
+{
+  "name": "Updated Project Name",
+  "description": "Updated description",
+  "client": "Updated Client Name",
+  "startDate": "2024-09-01",
+  "endDate": "2024-12-31",
+  "status": "Completed"
+}
+
+###
+
+### Delete a Project
+DELETE http://localhost:8080/api/projects/1
